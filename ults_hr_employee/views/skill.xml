@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="skill_form_view_id" model="ir.ui.view">
+            <field name="name">skill_form_view</field>
+            <field name="model">skill.skill</field>
+            <field name="arch" type="xml">
+                <form string="Skill">
+                    <group style="width:50%">
+                    <field name="sequence_number"/>
+                    <field name="name"/>
+                    </group>
+                    <group style="width:50%">
+<!--                    <field name="skill_code"/>-->
+                    </group>
+                </form>
+            </field>
+        </record>
+           <record id="skill_tree_view_id" model="ir.ui.view">
+            <field name="name">skill_tree_view</field>
+            <field name="model">skill.skill</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="sequence_number" />
+                    <field name="name" required="1"/>
+<!--                    <field name="skill_code"/>-->
+                    <button name="print" string="Print" type="object" class="oe_button"/>
+                </tree>
+            </field>
+        </record>
+        <record id="skill_skill_action" model="ir.actions.act_window">
+            <field name="name">Skills</field>
+            <field name="res_model">skill.skill</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

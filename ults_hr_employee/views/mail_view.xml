@@ -1,0 +1,34 @@
+<!--<?xml version="1.0" encoding="utf-8" ?>-->
+<!--<odoo>-->
+<!--    <record id="view_mail_tree" model="ir.ui.view">-->
+<!--        <field name="name">Demo Mail</field>-->
+<!--        <field name="model">hr.employee</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <tree>-->
+<!--                <field name="emp"/>-->
+<!--            </tree>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    <record id="vie_form_mail_id" model="ir.ui.view">-->
+<!--        <field name="name">Demo Mail form</field>-->
+<!--        <field name="model">hr.employee</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <form>-->
+<!--                <sheet>-->
+<!--                    <group>-->
+<!--                        <group>-->
+<!--                            <field name="emp"/>-->
+<!--                        </group>-->
+<!--                    </group>-->
+<!--                </sheet>-->
+<!--            </form>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    <record model="ir.actions.act_window" id="action_view_mail_id">-->
+<!--        <field name="name">Qualification</field>-->
+<!--        <field name="res_model">hr.employee</field>-->
+<!--        <field name="view_mode">tree,form</field>-->
+<!--    </record>-->
+<!--</odoo>-->

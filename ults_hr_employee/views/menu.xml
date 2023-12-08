@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <menuitem id="skill_skill_menu"
+                  name="Skills"
+                  parent="hr.menu_hr_root"
+                  action="skill_skill_action"/>
+
+    </data>
+</odoo>

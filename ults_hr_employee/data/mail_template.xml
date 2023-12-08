@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <record id="mail_template_id"
+                model="mail.template">
+            <field name="name">Demo mail</field>
+            <field name="model_id"
+                   ref="ults_hr_employee.model_hr_employee"/>
+            <field name="email_from">HR ULTS &lt;admin@yourcompany.example.com&gt;</field>
+            <field name="email_to">amaya.pradeep@ultsglobal.com</field>
+            <field name="auto_delete"
+                   eval="False"/>
+            <field name="subject">Demo mail</field>
+            <field name="body_html"
+                   type="html">
+                <tbody>
+                    <tr>
+                        <td align="center">
+                            <table border="0"
+                                   cellpadding="0"
+                                   cellspacing="0"
+                                   width="590"
+                                   style="padding: 24px; background-color: white; color: #454748; border-collapse:separate;">
+                                <tbody>
+                                    <tr>
+                                        <td align="center"
+                                            style="min-width: 590px;">
+                                            <table border="0"
+                                                   cellpadding="0"
+                                                   cellspacing="0"
+                                                   width="100%"
+                                                   style="background-color: white; padding: 0; border-collapse:separate;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td valign="middle">
+                                                            <span style="font-size: 10px;">Your Mail Entry</span>
+                                                            <br></br>
+                                                            <span style="font-size: 20px; font-weight: bold;">
+                                                                Demo Mail
+                                                            </span>
+                                                        </td>
+                                                        <td valign="middle"
+                                                            align="right">
+                                                            <img style="padding: 0px; margin: 0px; height: 48px;"
+                                                                 src="http://localhost:8069/logo.png?company=1"
+                                                                 alt="YourCompany"
+                                                                 data-original-title=""
+                                                                 title=""
+                                                                 aria-describedby="tooltip523361"/>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"
+                                                            style="text-align:center;">
+                                                            <hr width="100%"
+                                                                style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin:4px 0px 32px 0px;"
+                                                                contenteditable="false"/>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="min-width: 590px;">
+                                            <div style="margin:0px; padding:0px; font-size:13px">
+                                                Mitchell Admin attach a mail to you.
+                                                Revert acknowledgements as soon as you receive this mail.
+                                                <br></br>
+                                                <br></br>
+                                                <br></br>
+<!--                                                <p style="padding:16px 0px 16px 0px">-->
+<!--                                                    <a style="background-color:#875A7B; padding:8px 16px 8px 16px; text-decoration:none; color:#fff; border-radius:5px"-->
+<!--                                                       href="http://localhost:8069/mail/view?model=account.move&amp;res_id=6"-->
+<!--                                                       data-oe-model="account.move"-->
+<!--                                                       data-oe-id="6">-->
+<!--                                                        View Journal Entry-->
+<!--                                                    </a>-->
+<!--                                                </p>-->
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center"
+                                            style="min-width: 590px; padding: 0 8px 0 8px; font-size:11px;">
+                                            <hr width="100%"
+                                                style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 4px 0px;"
+                                                contenteditable="false"/>
+                                            <b>YourCompany</b>
+                                            <br></br>
+                                            <div style="color: #999999;">
+                                                +1 (650) 555-0111
+                                                |
+                                                <a style="text-decoration:none; color: #999999;"
+                                                   href="mailto:info@yourcompany.com">info@yourcompany.com
+                                                </a>
+                                                |
+                                                <a style="text-decoration:none; color: #999999;"
+                                                   href="http://www.example.com">
+                                                    http://www.example.com
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center"
+                            style="min-width: 590px;">
+                            Powered by
+                            <a target="_blank"
+                               href="https://www.odoo.com?utm_source=db&amp;utm_medium=email"
+                               style="color: #875A7B;">Odoo
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </field>
+        </record>
+    </data>
+</odoo>

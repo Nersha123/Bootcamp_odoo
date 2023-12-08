@@ -1,0 +1,40 @@
+<odoo>
+    <record id="view_base_model_form_inherit" model="ir.ui.view">
+        <field name="name">hr_employee.form.inherit</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet/div">
+                <button name="print_pdf" string="pdf" type="object" class="btn btn-default" />
+            </xpath>
+            <field name="department_id" position="after">
+                <field name="date_start" />
+                <div style="color:blue">
+                <button name="print_date" type="object" string="print" />
+                </div>
+            </field>
+            <field name="department_id" position="after">
+                <button name="send_email" type="object" string="mail" class="oe_button" style="background-color: #f8f9fa; color: #495057;" onmouseover="this.style.backgroundColor = '#007bff'; this.style.color = '#fff';" onmouseout="this.style.backgroundColor = '#f8f9fa'; this.style.color = '#495057';"/>
+            </field>
+            <field name="coach_id" position="after">
+                <field name="skill"  options="{'no_create': True, 'no_create_edit':True, 'no_open': True}"/>
+            </field>
+            <!--            <xpath expr="//field[@name='parent_id']" position="attributes">-->
+            <field name="parent_id" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+        <!--            </xpath>-->
+        </field>
+    </record>
+    <record id="view_employee_model_tree_inherit" model="ir.ui.view">
+    <field name="name">hr_employee.tree.inherit</field>
+    <field name="model">hr.employee</field>
+    <field name="inherit_id" ref="hr.view_employee_tree"/>
+    <field name="arch" type="xml">
+        <field name="parent_id" position="after">
+            <field name="resource_calendar_id"/>
+        </field>
+    </field>
+    </record>
+
+</odoo>
